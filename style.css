@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #141c22;
+}
+.card{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    background: linear-gradient(#2196f3,#2196f3 30%,#1d3548 30%,#1d3548 100%);
+    border-radius: 30px;
+}
+.imgbox{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    transition: 0.5s;
+    transform-origin: top;
+    border-radius: 30px;
+    background-image: url(/9.\ Пустыня.jpg);
+    background-size: 100%;
+}
+.img90{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 200px;
+    transition: 0.5s;
+    margin: 270px 20px;
+    transform-origin: top;
+    color: white;
+    flex-direction: column;
+    display: flex;
+    gap: 10px;
+    font-family: sans-serif;
+    background-color: #2195f300;
+}
+.logo{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-left: 20px;
+}
+.box{
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 50%;
+}
+#ty{
+    transform: translateX(-5px);
+}
+#top{
+    transform:translateX(-2px) translateY(3px);
+}
+.fo{
+    color: rgba(255, 255, 255, 0);
+}
+h3{
+    color: rgba(255, 255, 255, 0);
+}
+
+i{
+    margin-left: 12px;
+    font-size: 25px;
+    margin-top: 5px;
+    color: rgba(255, 255, 255, 0);
+}
+.img90 .fo{
+    margin-left: 65px;
+}
+.img90 h3{
+    margin-left: 50px;
+}
+.card:hover .imgbox{
+    transform: translateY(30px) scale(0.5);
+    border-radius: 30px;
+}
+.card:hover .img90{
+    transform: translateY(10px) ;
+    border-radius: 0;
+}
+.card:hover .fo{
+    color: white;
+    font-size: 30px;
+}
+.card:hover h3{
+    color: #2196f3;
+}
+.card:hover .box{
+    background-color: #355f81;
+}
+.card:hover i{
+    color: white;
+}
+.box:hover i{
+    -webkit-transform: rotate(360deg) translateZ(0);
+    transition: 0.5s;
+}
+.box:hover{
+    background-color: #2196f3;
+}
